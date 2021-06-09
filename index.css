@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Source Code Regular";
+  src: url("./res/fonts/SourceCodePro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Code Bold";
+  src: url("./res/fonts/SourceCodePro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Code Italic";
+  src: url("./res/fonts/SourceCodePro-LightItalic.ttf") format("truetype");
+}
+
+.regular {
+  font-family: "Source Code Regular";
+}
+
+.bold {
+  font-family: "Source Code Bold";
+}
+
+.italic {
+  font-family: "Source Code Italic";
+}
+
+body {
+  padding: 1em;
+}
+
+.box {
+  padding: 0.4em 1.2em 0.4em 1.2em;
+  border: 1px solid black;
+  margin: 1em 0 1em 0;
+}
+
+.paragraph {
+  line-height: 0.3em;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  height: 2em;
+  width: 2em;
+  margin: 1em;
+}
