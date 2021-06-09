@@ -50,4 +50,27 @@ body {
   height: 2em;
   width: 2em;
   margin: 1em;
+  fill: black;
+}
+
+@media screen and (max-width: 720px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: rgb(217, 227, 237);
+    background-color: rgb(5, 23, 51);
+  }
+  .box {
+    border: 1px solid white;
+  }
+  .icon {
+    fill: aliceblue;
+  }
 }
