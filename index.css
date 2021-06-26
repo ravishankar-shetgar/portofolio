@@ -13,6 +13,33 @@
   src: url("./res/fonts/SourceCodePro-LightItalic.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4em;
+  border: 1px black solid;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+img {
+  fill: aqua;
+}
+
+/* font family */
 .regular {
   font-family: "Source Code Regular";
 }
@@ -25,8 +52,74 @@
   font-family: "Source Code Italic";
 }
 
-body {
+main {
   padding: 1em;
+  margin-top: 4em;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  border: 1px black solid;
+  height: 2.5em;
+  width: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: beige;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  border: 1px black solid;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  margin: 0.3em 1em 0.3em 1em;
+}
+
+.contact-link > i {
+  margin-right: 0.2em;
+}
+
+.icon {
+  color: brown;
+}
+
+#skills-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  margin: 0.3em;
+  border: 1px solid black;
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 3.8em;
+  height: 3.8em;
+}
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:active {
+  color: blueviolet;
+  text-decoration: none;
 }
 
 .box {
@@ -46,23 +139,19 @@ body {
   align-items: center;
 }
 
-.icon {
-  height: 2em;
-  width: 2em;
-  margin: 1em;
-  fill: black;
-}
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
   .flex-row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
+  .contact-link {
+    width: 100%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   * {
     color: rgb(217, 227, 237);
     background-color: rgb(5, 23, 51);
@@ -73,4 +162,4 @@ body {
   .icon {
     fill: aliceblue;
   }
-}
+} */
