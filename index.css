@@ -16,6 +16,8 @@
 * {
   box-sizing: border-box;
   scroll-padding-top: 5em;
+  color: black;
+  background-color: white;
 }
 
 html {
@@ -27,16 +29,10 @@ html {
   top: 0;
   left: 0;
   height: 4em;
-  border: 1px black solid;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
-}
-
-img {
-  fill: aqua;
 }
 
 /* font family */
@@ -57,33 +53,84 @@ main {
   margin-top: 4em;
 }
 
+#projects-div {
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex-grow: 1;
+  width: 45%;
+  padding: 0.5em;
+  margin: 0.5em 0.5em 1em 0.5em;
+}
+
+.project > h4 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
 #scroll-to-top {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
-  border: 1px black solid;
-  height: 2.5em;
-  width: 2.5em;
+  bottom: 1.3em;
+  right: 1.3em;
+  height: 3em;
+  width: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: beige;
+}
+
+#contact-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .contact-link {
   display: flex;
   align-items: center;
-  border: 1px black solid;
-  padding: 0.1em 0.5em 0.1em 0.5em;
-  margin: 0.3em 1em 0.3em 1em;
+  justify-content: center;
+  /* padding: 0.1em 0.5em 0.1em 0.5em; */
+  padding: 0.5em;
+  margin: 0.4em;
 }
 
-.contact-link > i {
+/* .contact-link > i {
   margin-right: 0.2em;
+} */
+
+ul {
+  list-style-type: "> ";
+  padding-left: 1em;
 }
 
 .icon {
-  color: brown;
+  color: rgb(119, 118, 118);
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  padding: 0.4em;
+  margin: 0.4em;
+}
+
+.tag {
+  padding: 0.3em;
+  margin: 0.1em;
+  margin-bottom: 0.5em;
+  display: inline-block;
 }
 
 #skills-icons {
@@ -97,14 +144,13 @@ main {
 
 .tech-icon {
   margin: 0.3em;
-  border: 1px solid black;
-  padding: 0.4em;
+  padding: 0.6em 0.5em 0.3em 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  width: 3.8em;
-  height: 3.8em;
+  flex-direction: column;
+  /* width: 3.8em; */
+  /* height: 3.8em; */
 }
 
 a {
@@ -120,12 +166,33 @@ a:visited {
 a:active {
   color: blueviolet;
   text-decoration: none;
+  transition: all 0.3s;
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px #ccc;
 }
+
+/* a:hover {
+  transition: all 0.3s;
+  color: rgb(201, 233, 83);
+  background-color: rgb(54, 115, 165);
+} */
 
 .box {
   padding: 0.4em 1.2em 0.4em 1.2em;
-  border: 1px solid black;
   margin: 1em 0 1em 0;
+}
+
+.box-border {
+  border: 1px solid darkgrey;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 2px 1px #ccc;
+}
+
+.proj-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
 }
 
 .paragraph {
@@ -149,17 +216,33 @@ a:active {
   .contact-link {
     width: 100%;
   }
+  .project {
+    width: 95%;
+  }
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   * {
-    color: rgb(217, 227, 237);
-    background-color: rgb(5, 23, 51);
+    color: aliceblue;
+    background-color: rgb(3, 15, 34);
   }
-  .box {
-    border: 1px solid white;
+  .box-border {
+    border: 1px solid rgb(227, 239, 240);
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 1px 0.5px rgb(236, 229, 229);
   }
   .icon {
-    fill: aliceblue;
+    color: aliceblue;
   }
-} */
+  a {
+    color: rgb(210, 186, 231);
+  }
+
+  a:visited {
+    color: rgb(210, 186, 231);
+  }
+
+  a:active {
+    color: rgb(210, 186, 231);
+  }
+}

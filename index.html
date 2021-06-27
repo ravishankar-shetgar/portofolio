@@ -16,110 +16,150 @@
 
 <body>
 
-    <nav id='nav-bar' class="bold heading">
+    <nav id='nav-bar' class="bold heading box-border">
         <h1>RAVISHANKAR B SHETGAR</h1>
     </nav>
 
-    <!-- change color scheme on every reload -->
+    <!-- change color scheme on every reload / scroll -->
 
     <main>
-        <div class="flex-row" id="contact-div">
-            <a href="mailto:shetgarravi.1123@gmail.com" class="contact-link">
+        <!-- contact info -->
+        <div id="contact-div">
+            <a href="mailto:shetgarravi.1123@gmail.com" class="contact-link box-border" target="_blank" title="Email">
                 <i class="far fa-envelope fa-2x icon"></i>
-                <p class="bold">shetgarravi.1123@gmail.com</p>
             </a>
 
-            <a href="https://www.linkedin.com/in/ravishankar-shetgar/" title="My linkedin" class="contact-link">
+            <a href="https://www.linkedin.com/in/ravishankar-shetgar/" class="contact-link box-border" target="_blank"
+                title="Linkedin">
                 <i class="fab fa-github-square fa-2x icon"></i>
-                <p class="bold">Linkedin</p>
             </a>
 
-            <a href="https://github.com/ravishankar-shetgar" class="contact-link">
+            <a href="https://github.com/ravishankar-shetgar" class="contact-link box-border" target="_blank"
+                title="Github">
                 <i class="fab fa-linkedin fa-2x icon"></i>
-                <p class="bold">Github</p>
             </a>
 
-            <a href="./res/files/Ravishankar_Basavraj_Shetgar.pdf" download="" class="contact-link">
+            <a href="./res/files/Ravishankar_Basavraj_Shetgar.pdf" download class="contact-link box-border"
+                target="_blank" title="Resume Download">
                 <i class="fas fa-file-download fa-2x icon"></i>
-                <p class="bold">Resume</p>
             </a>
         </div>
 
-        <div class="box">
-            <h3 class="bold">Summary</h3>
+        <!-- links -->
+        <div class="box box-border" id="links">
 
-            <p class='regular'>Bachelor of Computer Applications (BCA) student with project experience in React Native.
-                Seeking a
+            <a href="#about" class="link bold box-border">About</a>
+            <a href="#languages" class="link bold box-border">Languages/Frameworks</a>
+            <a href="#tools" class="link bold box-border">Tools</a>
+            <a href="#work" class="link bold box-border">Work Experience</a>
+            <a href="#projects" class="link bold box-border">Projects</a>
+
+        </div>
+
+        <!-- about -->
+        <div class="box box-border" id='about'>
+            <!-- <h3 class="bold">Summary</h3> -->
+
+            <p class='regular'> Recent graduate with project experience in React Native. Seeking a
                 challenging opportunity to utilize my software development skills that will prepare me for an exciting
                 career in the future. Currently I develop cross-platform applications using React Native.</p>
+
+            <p class="regular">Bachelor of Computer Applications (BCA) student from Pune University, with a average GPA
+                of 8.3</p>
         </div>
 
-        <div class="box">
+        <!-- languages and frameworks -->
+        <div class="box box-border" id="languages">
 
-            <h3 class="bold">Technology</h3>
+            <h3 class="bold">Laguages/Frameworks</h3>
 
             <div id="skills-icons">
 
-                <div class="tech-icon">
-                    <i class="fab fa-react fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-react fa-3x icon"></i>
+                    <p class="bold">ReactJS</p>
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-react fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-react fa-3x icon"></i>
+                    <p class="bold">React Native</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-js fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-js fa-3x icon"></i>
+                    <p class="bold">ES6 JS</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-html5 fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-html5 fa-3x icon"></i>
+                    <p class="bold">HTML</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-css3-alt fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-css3-alt fa-3x icon"></i>
+                    <p class="bold">CSS</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-java fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-java fa-3x icon"></i>
+                    <p class=" bold">Java</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fas fa-database fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fas fa-database fa-3x icon"></i>
+                    <p class="bold">MySQL</p>
+
                 </div>
 
-                <div class=" tech-icon">
-                    <i class="fab fa-node-js fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-node-js fa-3x icon"></i>
+                    <p class="bold">NodeJS</p>
+
                 </div>
 
             </div>
         </div>
 
-        <div class="box">
+        <!-- tools -->
+        <div class="box box-border" id="tools">
             <h3 class="bold">Tools</h3>
 
             <div id="skills-icons">
 
-                <div class="tech-icon">
-                    <i class="fab fa-bitbucket fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-bitbucket fa-3x icon"></i>
+                    <p class="bold">Bitbucket</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-git fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-git fa-3x icon"></i>
+                    <p class="bold">Git</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-github-square fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-github-square fa-3x icon"></i>
+                    <p class="bold">Github</p>
+
                 </div>
 
-                <div class="tech-icon">
-                    <i class="fab fa-ubuntu fa-3x"></i>
+                <div class="tech-icon box-border">
+                    <i class="fab fa-ubuntu fa-3x icon"></i>
+                    <p class="bold">Ubuntu</p>
+
                 </div>
 
             </div>
         </div>
 
-        <div class=" box">
+        <!-- work experience -->
+        <div class="box box-border" id="work">
 
             <h3 class="bold">Work Experience</h3>
 
@@ -129,7 +169,7 @@
                 <span class="bold">JSAPPRO PTY LTD</span>
             </p>
 
-            <ul style="list-style-type:'> ';">
+            <ul>
                 <li class="regular">Developed application from ground-up and implemented authentication
                     using Google, FB sign in.</li>
                 <li class="regular">Google Maps APIs to display maps and
@@ -139,36 +179,72 @@
             </ul>
 
         </div>
-        <div class=" box">
 
-            <h3 class="bold">Work Experience</h3>
+        <!-- projects -->
+        <div class="box box-border" id="projects">
+            <h3 class="bold">Projects</h3>
 
-            <p class="regular flex-row">
-                <span class="bold">Feb 21 / Now</span>
-                <span class="italic">React Native Intern</span>
-                <span class="bold">JSAPPRO PTY LTD</span>
-            </p>
+            <div id="projects-div" class="flex-row">
 
-            <ul style="list-style-type:'> ';">
-                <li class="regular">Developed application from ground-up and implemented authentication
-                    using Google, FB sign in.</li>
-                <li class="regular">Google Maps APIs to display maps and
-                    routes according to user location and input.</li>
-                <li class="regular">Use redux as a centralised state mangement
-                    system for the application.</li>
-            </ul>
+                <div class="project box-border">
+                    <h4 class="bold">Convert-it</h4>
+
+                    <span class="tag italic box-border">HTML</span>
+                    <span class="tag italic box-border">CSS</span>
+                    <span class="tag italic box-border">JS</span>
+
+                    <p class="desc regular">A simple unit converter made in HTML/CSS/JS. Has converters for various
+                        units and also has a fact display, to help compare conversions to real life objects.</p>
+
+                    <div class="proj-links">
+                        <a href="https://github.com/ravishankar-shetgar/portofolio" class="bold" title="Repositary link"
+                            target="_blank">
+                            Github Repo
+                        </a>
+                        <a href="https://ravishankar-shetgar.github.io/convert-it-web/" class="bold"
+                            title="Website Link" target="_blank">
+                            Website
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project box-border">
+                    <h4 class="bold">Vite-bord</h4>
+
+                    <div class="tag italic box-border">ReactJS</div>
+                    <div class="tag italic box-border">Express</div>
+                    <div class="tag italic box-border">MySQL</div>
+                    <div class="tag italic box-border">Node</div>
+
+                    <p class="desc regular">Vite Bord is a pesonalised board where you can add various items of your
+                        choice such as to-do lists, notes, photos, lists etc. Made in ReactJS with
+                    </p>
+
+                    <div class="proj-links">
+                        <a href="https://github.com/ravishankar-shetgar/portofolio" class="bold" title="Repositary link"
+                            target="_blank">
+                            Github Repo
+                        </a>
+                        <a href="https://ravishankar-shetgar.github.io/portofolio/" class="bold" title="Website Link"
+                            target="_blank">
+                            Website
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
 
     </main>
 
-    <div id="scroll-to-top">
-        <a href="#contact-div">
-            <div>
-                <i class="fa fa-arrow-up fa-2x"></i>
-            </div>
-        </a>
-    </div>
+    <a href="#contact-div" id="scroll-to-top" class="box-border">
+        <i class="fa fa-arrow-up fa-2x"></i>
+    </a>
+
+    <script src="./index.js"></script>
 
 </body>
 
